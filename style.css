@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(img/desktop/image-header.jpg);
+    height: 625px;
+    background-position: center;
+    background-size: cover;
+}
+
+.head {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.head h1 {
+    padding-bottom: 60px;
+}
+
+.brand {
+    color: white;
+    margin: 20px 40px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav */
+.navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.349);
+    color: whi;
+}
+
+/* hamburger menu */
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
