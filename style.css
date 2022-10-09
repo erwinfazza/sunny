@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -55,14 +56,14 @@ nav ul li a {
     color: white;
 }
 
-button {
+.btn-contact {
     border-radius: 20px;
     padding: 10px 20px;
     border: none;
     margin-right: 40px;
 }
 
-button:hover {
+.btn-contact:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.349);
     color: whi;
@@ -87,12 +88,95 @@ button:hover {
     border-radius: 10px;
 }
 
+/* main-container */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 665px 600px;
+    grid-template-rows: 650px 600px;
+}
+
+/* .container {
+    display: grid;
+    grid-template-areas:
+        'tex1 img1'
+        'img2 text2'
+        'text-img1 text-img2'
+    ;
+} */
+
+/* tex1 */
+.text1 {
+    padding: 200px 100px;
+
+}
+
+.transform {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.text1 p {
+    line-height: 25px;
+}
+
+.btn-learn {
+    border: none;
+    margin: 10px;
+    border-bottom: 2px solid hsl(51, 100%, 49%);
+}
+
+.btn-learn:hover {
+    border-bottom: 5px solid hsl(51, 100%, 49%);
+    padding-bottom: -10px;
+    border-radius: 5px;
+}
+
+/* img1 */
+.img1 {
+    background: url(img/desktop/image-transform.jpg) no-repeat;
+    width: 685px;
+
+}
+
+/* img2 */
+.img2 {
+    background: url(img/desktop/image-stand-out.jpg) no-repeat;
+    width: 665px;
+    height: 685px;
+
+}
+
+/* text2 */
+.text2 {
+    padding: 100px;
+}
+
+/* tex-img1 */
+.text-img1 {
+    background: url(img/desktop/image-graphic-design.jpg) no-repeat;
+    height: 500px;
+    padding: 100px;
+
+}
+
+/* text-img2 */
+.text-img2 {
+    background: url(img/desktop/image-photography.jpg) no-repeat;
+    height: 500px;
+    padding: 100px;
+
+}
+
+/* main-container end */
+
 @media screen and (max-width: 576px) {
     .toggle-button {
         display: flex;
     }
 
-    .navbar-links {
+    .nav-links {
         display: none;
         width: 100%;
         background-color: white;
@@ -108,27 +192,31 @@ button:hover {
         display: block;
     }
 
-    .navbar-links ul {
+    .nav-links ul {
         flex-direction: column;
     }
 
-    .navbar-links li {
+    .nav-links li {
         text-align: center;
         justify-content: center;
         align-content: center;
 
     }
 
-    .navbar-links a {
+    .nav-links a {
         color: blue;
         padding: 20px;
     }
 
-    .navbar-links.active {
+    .nav-links.active {
         display: flex;
     }
 
     .img {
         margin: 10px 230px;
     }
+
+
+
+
 }
