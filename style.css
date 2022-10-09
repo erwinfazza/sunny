@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "barlow";
+    src: url(font/Barlow-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url(font/Fraunces_144pt_Soft-Bold.ttf);
+}
+
 header {
     background-image: url(img/desktop/image-header.jpg);
     height: 625px;
@@ -17,7 +27,10 @@ header {
     color: white;
     display: flex;
     justify-content: center;
-
+    font-family: 'fraunces';
+    font-size: bold;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 .img {
@@ -26,9 +39,12 @@ header {
     margin-left: 650px;
 }
 
-.brand {
+.brand h3 {
     color: white;
     margin: 20px 40px;
+    font-family: 'barlow';
+    font-size: bold;
+    font-weight: 700 bold;
 }
 
 .top {
@@ -54,6 +70,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-family: 'barlow';
+    font-size: 18px;
 }
 
 .btn-contact {
@@ -100,24 +118,29 @@ nav ul li a {
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
-    margin: 200px 100px;
+    margin: 180px 100px;
 
 }
 
 .transform {
     font-size: 40px;
     padding-bottom: 20px;
+    font-family: 'fraunces';
+    /* margin-right: 100px; */
 }
 
 .div1 p {
     line-height: 20px;
-
+    font-family: 'barlow';
+    color: hsl(167, 40%, 24%);
+    font-size: 18px;
 }
 
 .btn-learn {
     margin-top: 20px;
     border: none;
     border-bottom: 2px solid yellow;
+    font-family: 'fraunces';
 }
 
 .btn-learn:hover {
@@ -139,12 +162,20 @@ nav ul li a {
 
 .div4 {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 200px 100px;
+    margin: 180px 100px;
 }
 
 .div4 h2 {
     padding: 10px;
     font-size: 40px;
+    font-family: 'fraunces';
+}
+
+.div4 p {
+    color: hsl(167, 40%, 24%);
+    font-family: 'barlow';
+    margin-left: 10px;
+    font-size: 18px;
 }
 
 .div5 {
@@ -157,10 +188,17 @@ nav ul li a {
     padding: 10px;
     font-size: 40px;
     margin: 400px 100px 10px 100px;
+    font-family: 'fraunces';
+    text-align: center;
 }
 
 .div5 p {
-    margin: 0 100px;
+    margin: 0 112px;
+    line-height: 20px;
+    font-family: 'barlow';
+    font-size: 18px;
+    color: hsl(167, 40%, 24%);
+    text-align: center;
 }
 
 .div6 {
@@ -172,10 +210,16 @@ nav ul li a {
     padding: 10px;
     font-size: 40px;
     margin: 400px 100px 10px 100px;
+    font-family: 'fraunces';
+    text-align: center;
 }
 
 .div6 p {
-    margin: 0 100px;
+    margin: 0 150px;
+    color: hsl(167, 40%, 24%);
+    font-size: 18px;
+    font-family: 'barlow';
+    text-align: center;
 }
 
 /* main-container end */
