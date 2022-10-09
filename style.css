@@ -224,6 +224,30 @@ nav ul li a {
 
 /* main-container end */
 
+/* testimonial */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+/* testimonial end */
+
+
 @media screen and (max-width: 576px) {
     .toggle-button {
         display: flex;
@@ -283,6 +307,13 @@ nav ul li a {
 
     .div1 {
         grid-area: 2 / 1 / 3 / 2;
+        margin: 50px 40px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .div1 p {
+        line-height: 30px;
     }
 
     .div3 {
@@ -292,6 +323,18 @@ nav ul li a {
 
     .div4 {
         grid-area: 4 / 1 / 5 / 2;
+        margin: 150px 50px;
+
+    }
+
+    .div4 h2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div4 p {
+        text-align: center;
+        width: 400px;
     }
 
     .div5 {
@@ -303,7 +346,4 @@ nav ul li a {
         grid-area: 6 / 1 / 7 / 2;
         background-position: center;
     }
-
-
-
 }
