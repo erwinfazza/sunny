@@ -225,7 +225,7 @@ nav ul li a {
 /* main-container end */
 
 /* testimonial */
-.parent {
+.parent-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -233,19 +233,189 @@ nav ul li a {
     grid-row-gap: 0px;
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
+.text h2 {
+    margin: 100px;
+    text-align: center;
+    font-family: 'fraunces';
+    color: hsl(167, 40%, 24%);
+    letter-spacing: 3px;
 }
 
-.div2 {
+.dip1 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0 10px 40px 60px;
+    width: 400px;
+}
+
+.dip1 p {
+    text-align: center;
+    width: 300px;
+    margin-left: 60px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'barlow';
+}
+
+div h4 {
+    text-align: center;
+    margin: 50px 10px 10px;
+    font-family: 'fraunces';
+    color: hsl(213, 9%, 39%);
+    font-size: 22px;
+}
+
+.dip2 {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.div3 {
+.dip2 p {
+    text-align: center;
+    width: 300px;
+    margin-left: 60px;
+    color: hsl(167, 40%, 24%);
+
+}
+
+.dip3 {
     grid-area: 1 / 3 / 2 / 4;
 }
 
+.dip3 p {
+    text-align: center;
+    width: 300px;
+    margin-left: 60px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'barlow';
+}
+
+.foto {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
 /* testimonial end */
+
+/* images */
+.images {
+    width: 335px;
+    height: 400px;
+}
+
+.parent-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 339px);
+    grid-template-rows: 250px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 1024px;
+
+}
+
+.di1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.di2 {
+    grid-area: 1 / 2 / 2 / 3;
+
+}
+
+.di3 {
+    grid-area: 1 / 3 / 2 / 4;
+
+}
+
+.di4 {
+    grid-area: 1 / 4 / 2 / 5;
+
+}
+
+/* images end */
+
+
+/* footer */
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+}
+
+.foot {
+    display: flex;
+    margin-top: 150px;
+
+}
+
+.sunny {
+    text-align: center;
+    justify-content: center;
+    margin: 100px 600px;
+    padding-top: 100px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'bar-black';
+    font-size: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigasi {
+    display: inline-block;
+    margin-bottom: 50px;
+
+}
+
+.link li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.link li {
+    font-family: 'bar-bold';
+    color: hsl(167, 40%, 24%);
+}
+
+.link li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sosmed {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.data li {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.data li:hover {
+    border-radius: 50%;
+    padding-right: 5px;
+    background-color: white;
+}
+
+
+
+@font-face {
+    font-family: 'bar-black';
+    src: url(font/Barlow-Black.ttf);
+}
+
+@font-face {
+    font-family: 'bar-bold';
+    src: url(font/Barlow-Bold.ttf);
+}
+
+
+/* footer end */
 
 
 @media screen and (max-width: 576px) {
@@ -345,5 +515,71 @@ nav ul li a {
     .div6 {
         grid-area: 6 / 1 / 7 / 2;
         background-position: center;
+    }
+
+    /* testimonial */
+    .parent-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .dip1 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 50px;
+    }
+
+    .dip2 {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-left: 50px;
+    }
+
+    .dip3 {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-left: 50px;
+    }
+
+    /* images */
+    .parent-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(2, 240px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .images {
+        width: 239px;
+        height: 270px;
+
+    }
+
+    .di1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .di2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .di3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .di4 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .sunny {
+        display: flex;
+        text-align: left;
+        margin-left: 170px;
+    }
+
+    footer {
+        margin-top: -120px;
+
     }
 }
